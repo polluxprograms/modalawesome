@@ -3,7 +3,7 @@ local gtable = require("gears.table")
 local gtimer = require("gears.timer")
 local beautiful = require("beautiful")
 local textbox = require("wibox.widget.textbox")
-local execute = require("modalawesome.matcher").execute
+local execute = require(... .. ".matcher").execute
 local hotkeys_popup = require("awful.hotkeys_popup.widget")
 local unpack = unpack or table.unpack -- luacheck: globals unpack (compatibility with Lua 5.1)
 
