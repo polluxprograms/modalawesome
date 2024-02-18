@@ -21,11 +21,13 @@ end
 
 local function startmode(modename)
   modalawesome.active_mode:set_text(modename)
+  awesome.emit_signal('mode::changed', modename)
   grabber:start()
 end
 
 local function stopmode(modename)
   modalawesome.active_mode:set_text(modename)
+  awesome.emit_signal('mode::changed', modename)
   grabber:stop()
 end
 
